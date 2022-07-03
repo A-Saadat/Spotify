@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+.likeSongIcon{
+    background: linear-gradient(135deg,#450af5,#c4efd9);
+    border-radius: 2px;
+}
+
