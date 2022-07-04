@@ -9,55 +9,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
 
-    <link rel="stylesheet" href="./Static/Css/Style.css">
     <link rel="stylesheet" href="./Static/Css/Main.css">
 </head>
 <body class="font-circular">
     
-    <div>
+    <aside class="__SIDE-MENU__ bg-primetyBlack p-6 text-primetyWhite w-full h-screen">
+        <div class="__SIDEBAR-LOGO__ mb-8 ">
+            <img src="./Static/Img/Spotify-Logo.png" alt="hello" width="130">
+        </div>
 
-        <main>  
-        </main>
-        
-        <aside class="bg-primetyBlack p-6 text-primetyWhite w-fit h-screen">
-            <div class="mb-8">
-                <img src="./Static/Img/Spotify-Logo.png" alt="hello" width="130">
+        <ul class="__NAVIGATOR-MEENU__ flex flex-col gap-4 text-sm ">
+            <li class="flex items-center gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
+                <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl home-active-icon" viewBox="0 0 24 24"><path fill="#b3b3b3" d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"></path></svg>
+                <span>Home</span>
+            </li>
+            <li class="flex items-center gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
+                <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl search-icon" viewBox="0 0 24 24"><path fill="#b3b3b3" d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path></svg>
+                <span>Search</span>
+            </li>
+            <li class="flex items-center gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
+                <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl collection-icon" viewBox="0 0 24 24"><path fill="#b3b3b3" d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path></svg>
+                <span class="block">Library</span>
+            </li>
+        </ul>
+
+        <ul class="__FAST-MENU__ mt-10 pb-3 flex flex-col gap-5 text-sm text-customGray border-b-2 border-lowOpacity">
+            <li class="flex gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
+                <i class="fa fa-plus text-primetyBlack bg-customGray p-1 rounded-sm"></i>
+                <span>Create Playlist</span>
+            </li>
+            <li class="flex gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
+                <div class="likeSongIcon h-fit w-max flex items-center justify-center p-[5px]">
+                    <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0  flex justify-center items-center">
+                        <path fill="#f5f5f5" d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"></path>
+                    </svg>
+                </div>
+                <span>Liked Songs</span>
+            </li>
+        </ul>  
+    </aside>
+
+    <main class="main_container h-screen">
+        <nav class="flex items-center justify-between px-10 h-16 sticky top-0 bg-[#1f105ac7]">
+            <div class="__BACK-FORWARD-BTN__ flex gap-4">
+                <div class="back_history bg-bgLowOopacity rounded-full w-fit p-1">
+                    <svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                        <path class="fill-customGray" fill="#b3b3b3" d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z"></path>
+                    </svg>
+                </div>
+                <div class="forward_history bg-bgLowOopacity rounded-full w-fit p-1">
+                    <svg role="img" height="24" width="24" class="rotate-180" viewBox="0 0 24 24">
+                        <path class="fill-customGray" fill="#b3b3b3" d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z"></path>
+                    </svg>
+                </div>
             </div>
-
-            <ul class="flex flex-col gap-4 text-sm">
-                <li class="flex items-center gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
-                    <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl home-active-icon" viewBox="0 0 24 24"><path fill="#b3b3b3" d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"></path></svg>
-                    <span>Home</span>
-                </li>
-                <li class="flex items-center gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
-                    <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl search-icon" viewBox="0 0 24 24"><path fill="#b3b3b3" d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path></svg>
-                    <span>Search</span>
-                </li>
-                <li class="flex items-center gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
-                    <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl collection-icon" viewBox="0 0 24 24"><path fill="#b3b3b3" d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path></svg>
-                    <span class="block">Library</span>
-                </li>
-            </ul>
-
-            <ul class="mt-10 pb-3 flex flex-col gap-5 text-sm text-customGray border-b-2 border-lowOpacity">
-                <li class="flex gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
-                    <i class="fa fa-plus text-primetyBlack bg-customGray p-1 rounded-sm"></i>
-                    <span>Create Playlist</span>
-                </li>
-                <li class="flex gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
-                    <div class="likeSongIcon h-fit w-max flex items-center justify-center p-[5px]">
-                        <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0  flex justify-center items-center">
-                            <path fill="#f5f5f5" d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"></path>
+            <div class="__USER-PROFILE__ text-sm relative" id="profile-dropdown">
+                <div class="__PROFILE-DROPDOWN__ cursor-pointer flex items-center gap-2 bg-primetyBlack w-fit rounded-full pr-2 h-8 hover:bg-[#3e3e3e]">
+                    <div class="w-7 h-7">
+                        <img src="./Static/Img/user.png" class="w-full h-full object-cover rounded-full scale-125" alt="${Porfile-Img}">
+                    </div>
+                    <h4 class="text-primetyWhite">Ali Saadat</h4>
+                    <div>
+                        <svg role="img" height="16" width="16" class="Svg-sc-1bi12j5-0 EQkJl eAXFT6yvz37fvS1lmt6k" viewBox="0 0 16 16">
+                            <path fill="#f5f5f5" d="M14 6l-6 6-6-6h12z"></path>
                         </svg>
                     </div>
-                    <span>Liked Songs</span>
-                </li>
-            </ul>
-            
-            
-        </aside>
+                </div>
+                <div class="__PROFILE-DROPDOWN-MENU__ mt-1 absolute invisible right-0" id="profile-dropdown-menu">
+                    <ul class="bg-primetyGray text-primetyWhite w-52 p-1 rounded-[4px] gap-1">
+                        <li class="flex items-center justify-between bg-transparent h-10 p-3 rounded-sm hover:bg-[#3e3e3e] w-full">
+                            <span>Account</span>
+                            <svg fill="#f5f5f5" role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 EQkJl">
+                                <path d="M1 2.75A.75.75 0 011.75 2H7v1.5H2.5v11h10.219V9h1.5v6.25a.75.75 0 01-.75.75H1.75a.75.75 0 01-.75-.75V2.75z"></path>
+                                <path d="M15 1v4.993a.75.75 0 11-1.5 0V3.56L8.78 8.28a.75.75 0 01-1.06-1.06l4.72-4.72h-2.433a.75.75 0 010-1.5H15z"></path>
+                            </svg>
+                        </li>
+                        <li class="flex items-center justify-between bg-transparent h-10 p-3 rounded-sm hover:bg-[#3e3e3e] w-full">
+                            <span>Profile</span>
+                        </li>
+                        <li class="flex items-center justify-between bg-transparent h-10 p-3 rounded-sm hover:bg-[#3e3e3e] w-full">
+                            <span>Log out</span>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
+        
+    </main>
 
-    </div>
+    <script src="./Static/js/main.js"></script>
 
 </body>
 </html>

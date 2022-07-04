@@ -7,3 +7,12 @@
     border-radius: 2px;
 }
 
+.main_container{
+    background: rgb(31,16,90);
+    background: linear-gradient(180deg, rgba(31,16,90,1) 26%, rgba(25,20,20,1) 100%); 
+}
+
+.show-dropdown{
+    visibility: visible !important;
+}
+
