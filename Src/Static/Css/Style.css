@@ -12,7 +12,13 @@
     background: linear-gradient(180deg, rgba(31,16,90,1) 26%, rgba(25,20,20,1) 100%); 
 }
 
-.show-dropdown{
+.show-dropdown, 
+.active-item{
     visibility: visible !important;
+}
+
+.__library-preview-item__:hover .__item-play-btn__{
+    visibility: visible !important;
+    opacity: 1;
 }
 

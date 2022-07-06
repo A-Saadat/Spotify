@@ -29,7 +29,7 @@
             </li>
             <li class="flex items-center gap-4 cursor-pointer text-customGray hover:text-primetyWhite">
                 <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl collection-icon" viewBox="0 0 24 24"><path fill="#b3b3b3" d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path></svg>
-                <span class="block">Library</span>
+                <span class="block">Your Library</span>
             </li>
         </ul>
 
@@ -68,7 +68,7 @@
                     <div class="w-7 h-7">
                         <img src="./Static/Img/user.png" class="w-full h-full object-cover rounded-full scale-125" alt="${Porfile-Img}">
                     </div>
-                    <h4 class="text-primetyWhite">Ali Saadat</h4>
+                    <h4 class="text-primetyWhite select-none">Ali Saadat</h4>
                     <div>
                         <svg role="img" height="16" width="16" class="Svg-sc-1bi12j5-0 EQkJl eAXFT6yvz37fvS1lmt6k" viewBox="0 0 16 16">
                             <path fill="#f5f5f5" d="M14 6l-6 6-6-6h12z"></path>
@@ -95,6 +95,22 @@
             </div> 
         </nav>
         
+        <section class="__FIRST-CATEGORY-LIBRARY__ grid grid-cols-3 gap-4">
+            <div class="__library-preview-item__ flex items-center rounded bg-itemBG hover:bg-itemBGHover transition-all duration-150 w-full pr-4 justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-20 h-20">
+                        <img src="./Static/Img/likedSongs.png" class="w-full h-full" alt="likedSongs">
+                    </div>
+                    <h1 class="font-semibold text-primetyWhite">Liked Songs</h1>
+                </div>
+                <div class="__item-play-btn__ transition-opacity duration-200 bg-primetyGreen invisible opacity-0 w-fit p-3 rounded-full shadow-md shadow-primetyBlack cursor-pointer">
+                    <svg role="img" height="24" width="24" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 EQkJl">
+                        <path d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="./Static/js/main.js"></script>

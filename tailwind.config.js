@@ -13,9 +13,10 @@ module.exports = {
         primetyGray: '#282828',
         customLightGray: "#b3b3b3",
         lowOpacity: "rgba(0, 0, 0, .1)",
-        bgLowOopacity: "rgba(0, 0, 0,.7)"
-
-      }
+        bgLowOopacity: "rgba(0, 0, 0,.7)",
+        itemBG: "hsla(0,0%,100%,.1)",
+        itemBGHover: "hsla(0,0%,100%,.2)",
+      },
     },
   },
   plugins: [],
