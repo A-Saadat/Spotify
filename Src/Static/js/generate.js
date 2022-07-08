@@ -1,4 +1,4 @@
-const listInfo =[
+const LibraryPreviewList =[
     {title: "liked Songs", src: "./Static/Img/LikedSong.PNG", state: "pause"},
     {title: "My Fav Classical", src: "./Static/Img/MyFavClassical.jpg", state: "pause"},
     {title: "Francisco Tárrega Mix", src: "./Static/Img/Frans-Mix.jpg", state: "pause"},
@@ -30,4 +30,6 @@ function generateLibraryPreview(infoArr, contaienr){
         ` )
     })
 }
-export { generateLibraryPreview , listInfo }
+
+
+export { generateLibraryPreview , LibraryPreviewList }

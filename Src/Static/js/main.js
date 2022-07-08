@@ -5,7 +5,7 @@ function _id(id){
     return document.getElementById(id);
 }
 
-const libraryPreview = _id('libraryPreview')
+const libraryPreviewContainer = _id('libraryPreview')
 const goodTitle = _id('goodTitle');
 const date = new Date();
 
@@ -25,5 +25,5 @@ else
 
 
 
-generateLibraryPreview(listInfo, libraryPreview);
+generateLibraryPreview(LibraryPreviewList, libraryPreviewContainer);
 openDropDown(_id('profile-dropdown'), _id('profile-dropdown-menu'));

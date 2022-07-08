@@ -49,8 +49,8 @@
         </ul>  
     </aside>
 
-    <main class="main_container h-screen">
-        <nav class="flex items-center justify-between px-10 h-16 sticky top-0 bg-[#1f105ac7] mb-10">
+    <main class="main_container grid gap-7">
+        <nav class="flex items-center justify-between px-10 h-16 sticky top-0 bg-[#1f105ac7]">
             <div class="__BACK-FORWARD-BTN__ flex gap-4">
                 <div class="back_history bg-bgLowOopacity rounded-full w-fit p-1">
                     <svg role="img" height="24" width="24" viewBox="0 0 24 24">
@@ -113,8 +113,27 @@
                 </div>
             </div>
         </section>
+        
+        <section class="__MIX-CATEGORY__ px-10">
+            <h1 class="text-primetyWhite font-bold text-xl mb-5">Your Top Mixes</h1>
+
+            <div class="__MIX-MENU__ grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="__MIX-ITEM__ w-full p-5 bg-[#171717] hover:bg-[#262626] rounded-lg">
+                    <img src="./Static/Img/melodyMIX.jpg" alt="-Mix" class="w-full mb-5 rounded-lg">
+                    <h3 class="text-primetyWhite">Melody Mix</h3>
+                    <p class="text-customLightGray text-sm truncate">
+                        <a href="#">Elizabeth Joy Roe,</a>
+                        <a href="#">Lady Gaga,</a>
+                        <a href="#">Celil Refik Keya and more</a>
+                    </p>
+                </div>
+            </div>
+            
+        </section>
 
     </main>
+
+    
 
     <script type="module" src="./Static/js/main.js"></script>
 </body>
