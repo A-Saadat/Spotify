@@ -1,4 +1,5 @@
-import { generateLibraryPreview, listInfo } from './generate.js'
+import { generateLibraryPreview , generateRecommendation } from './generate.js'
+import { LibraryPreviewList, mixList } from './DataBase.js'
 
 const $ = document;
 function _id(id){
@@ -6,7 +7,11 @@ function _id(id){
 }
 
 const libraryPreviewContainer = _id('libraryPreview')
+const mixRecommendationContainer = _id('mixRecommendation')
+
 const goodTitle = _id('goodTitle');
+
+
 const date = new Date();
 
 function openDropDown(dropdown, dropdownMenu){
@@ -26,4 +31,7 @@ else
 
 
 generateLibraryPreview(LibraryPreviewList, libraryPreviewContainer);
+generateRecommendation(mixList, mixRecommendationContainer)
+
+
 openDropDown(_id('profile-dropdown'), _id('profile-dropdown-menu'));

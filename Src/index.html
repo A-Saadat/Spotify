@@ -50,7 +50,7 @@
     </aside>
 
     <main class="main_container grid gap-7">
-        <nav class="flex items-center justify-between px-10 h-16 sticky top-0 bg-[#1f105ac7]">
+        <nav class="flex z-50 items-center justify-between px-10 h-16 sticky top-0 bg-[#1f105ac7]">
             <div class="__BACK-FORWARD-BTN__ flex gap-4">
                 <div class="back_history bg-bgLowOopacity rounded-full w-fit p-1">
                     <svg role="img" height="24" width="24" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@
         
         <section class="__FIRST-CATEGORY-LIBRARY__ px-10">
             <h1 id="goodTitle" class="text-primetyWhite font-bold text-3xl mb-5">Good</h1>
-            <div id="libraryPreview" class="grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+            <div id="libraryPreview" class="__library-preview-MENU__ grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
                 <div class="__library-preview-item__ flex items-center rounded bg-itemBG hover:bg-itemBGHover transition-all duration-150 w-full pr-4 justify-between">
                     <div class="flex items-center gap-4">
                         <div class="w-20 h-20 rounded">
@@ -114,22 +114,33 @@
             </div>
         </section>
         
-        <section class="__MIX-CATEGORY__ px-10">
-            <h1 class="text-primetyWhite font-bold text-xl mb-5">Your Top Mixes</h1>
+        <main class="__RECOMMENDATION-SECTION__">
 
-            <div class="__MIX-MENU__ grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                <div class="__MIX-ITEM__ w-full p-5 bg-[#171717] hover:bg-[#262626] rounded-lg">
-                    <img src="./Static/Img/melodyMIX.jpg" alt="-Mix" class="w-full mb-5 rounded-lg">
-                    <h3 class="text-primetyWhite">Melody Mix</h3>
-                    <p class="text-customLightGray text-sm truncate">
-                        <a href="#">Elizabeth Joy Roe,</a>
-                        <a href="#">Lady Gaga,</a>
-                        <a href="#">Celil Refik Keya and more</a>
-                    </p>
+            <section class="__MIX-CATEGORY__ px-10">
+                <h1 class="text-primetyWhite font-bold text-xl mb-5">Your Top Mixes</h1>
+    
+                <div id="mixRecommendation" class="__MIX-MENU__ grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <div class="__MIX-ITEM__ w-full p-5 bg-[#171717] hover:bg-[#262626] rounded-lg">
+                        <div class="relative">
+                            <img src="./Static/Img/melodyMIX.jpg" alt="-Mix" class="w-full mb-5 rounded-lg">
+                            <div class="__item-play-btn__ invisible opacity-0 translate-y-10 absolute right-0 bottom-0 m-4 transition-all duration-300 bg-primetyGreen w-fit p-3 rounded-full shadow-md shadow-primetyBlack cursor-pointer">
+                                <svg role="img" height="24" width="24" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 EQkJl">
+                                    <path d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-primetyWhite">Melody Mix</h3>
+                        <p class="text-customLightGray text-sm truncate">
+                            <a href="#">Elizabeth Joy Roe,</a>
+                            <a href="#">Lady Gaga,</a>
+                            <a href="#">Celil Refik Keya and more</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            
-        </section>
+                
+            </section>
+
+        </main>
 
     </main>
 

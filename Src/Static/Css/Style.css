@@ -17,9 +17,17 @@
     visibility: visible !important;
 }
 
-.__library-preview-item__:hover .__item-play-btn__{
+* > [class*=MENU__] :hover .__item-play-btn__{
     visibility: visible !important;
     opacity: 1;
+}
+
+.__RECOMMENDATION-SECTION__ :hover .__item-play-btn__{
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
 }
 
 .truncate{
